@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .container{
+           
+            border: 2px solid black;
+            border-radius: 10px;
+        height: 80vh;
+        width: 50vw;
+       margin: auto;
+       margin-top: 50px;
+       /* display: flex;
+     justify-content: center;
+     align-items: end ; */
+    }
+    .box{
+      height: 20px;
+      width: 15vw;
+        background-color: aqua;
+        border: 2px solid ;
+        border-radius: 30px;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: animation1;
+        animation-duration: 4s;
+        animation-timing-function: cubic-bezier();
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+        /* transform: translateX(34.5vw) translateY(76vh); */
+         transition-property:transform ;
+           transition-duration: 3s;
+           transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition-delay: 1s;
+     
+    }
+    .translate{
+        transform: translateX(34.5vw) translateY(76vh);
+        
+    }
+    
+
+    @keyframes animation1 {
+        from{
+            background-color: black;
+        }
+        to{
+            background-color: aquamarine;
+        }
+        
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>
