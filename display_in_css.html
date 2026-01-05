@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display in CSS</title>
+    <STYLE>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+.box1{
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid green;
+    display: inline;
+    width:200px;
+}
+.box2{
+     padding: 20px;
+    margin: 20px;
+    border: 2px solid green;
+display: inline-block;
+width:200px;
+/* for making viisiblity hiddenwhich allows to keepsapace but not show element*/
+   /* visibility: hidden; */
+}
+.box3{
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid green;
+   display: inline-block;
+   /* for not showing and removing the space for that also*/
+   /* display: none; */
+display: inline-flex;
+justify-content: center;
+}
+    </STYLE>
+</head>
+<body>
+    <div class="box1">
+        IT IS A BOX
+    </div>
+     <div class="box2">
+        IT IS A BOX
+    </div>
+     <span class="box3">
+        IT IS A BOX
+     </span>
+</body>
+</html>
