@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            background-color: brown;
+        }
+
+        .box {
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <!--Specificity is Based on Cascade Algorithm Which varies on the basis of selectors used in css-->
+    <div class="box">
+        I am a Box
+    </div>
+</body>
+
+</html>
