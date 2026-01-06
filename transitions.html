@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 50vw;
+            background-color: aqua;
+        }
+        .box{
+            height: 20px;
+           width: 70px;
+            background-color: rgb(255, 130, 130);
+           transition-property:transform ;
+           transition-duration: 3s;
+           transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition-delay: 1s;
+        }
+        .translate{
+            transform: translateX(30vw) translateY(30vh);
+            background-color: beige;
+            scale: 1.1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"> YP Logix</div>
+    </div>
+</body>
+</html>
