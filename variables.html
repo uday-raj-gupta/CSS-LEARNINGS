@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        /* Global Variables */
+        :root{
+--color:rgb(0, 0, 196);
+--bocolor: green;
+        }
+        div{
+            height: 150px;
+            width: 200px;
+            margin: 15px;
+
+        }
+.box1{
+background-color: var(--color);
+/* local variable */
+--bacolor: red;
+border: 5px solid var(--bacolor);
+}
+.box2{
+    background-color: blueviolet;
+    border: 5px solid var(--bocolor);
+}
+.box3{
+    background-color: aqua;
+    border: 5px solid var(--bocolor);
+}
+    </style>
+    
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
